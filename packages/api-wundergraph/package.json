@@ -1,0 +1,16 @@
+{
+  "name": "api-wundergraph",
+  "description": "API Gateway",
+  "scripts": {
+    "dev": "wunderctl up --debug",
+    "start": "wunderctl start --debug",
+    "build": "wunderctl generate --debug",
+    "build:old": "wunderctl generate --debug && cp -R src/ ../webapp/wundergraph",
+    "build:docker": "docker build -t wundergraph .",
+    "build:package": "tsup generated --dts --format esm,cjs",
+    "deploy": "flyctl deploy"
+  },
+  "dependencies": {
+    "@wundergraph/sdk": "^0.143.1"
+  }
+}

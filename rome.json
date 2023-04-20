@@ -1,0 +1,12 @@
+{
+	"formatter": {
+		"ignore": ["dist/**", ".nuxt/**"],
+		"lineWidth": 120
+	},
+	"javascript": {
+		"formatter": {
+			"trailingComma": "none",
+			"semicolons": "asNeeded"
+		}
+	}
+}
